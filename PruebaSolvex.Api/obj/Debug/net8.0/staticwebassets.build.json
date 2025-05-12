@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "caHNtE1r5aKO5892NPgoSEaUGmupN5hJ+NBqx0irBHQ=",
+  "Source": "PruebaSolvex.Api",
+  "BasePath": "_content/PruebaSolvex.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

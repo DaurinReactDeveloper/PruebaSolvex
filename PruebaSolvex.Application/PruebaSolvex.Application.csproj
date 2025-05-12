@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Contract\" />
+    <Folder Include="Core\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Validations\" />
+    <Folder Include="Servicies\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PruebaSolvex.Persistence\PruebaSolvex.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
