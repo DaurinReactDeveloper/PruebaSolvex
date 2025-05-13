@@ -12,7 +12,7 @@ namespace PruebaSolvex.Persistence.Interfaces
     public interface IProductVariation : IBaseRepository<ProductVariation>
     {
 
-        Task<List<ProductVariationModel>> GetProductVariation();
+        Task<List<ProductVariationModel>> GetProductVariationByProductId(int productId);
 
 
     }

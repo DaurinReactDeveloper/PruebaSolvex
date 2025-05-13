@@ -17,3 +17,4 @@ D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Application\bin\D
 D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Application\bin\Debug\net8.0\PruebaSolvex.Infrastructure.pdb
 D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Application\obj\Debug\net8.0\PruebaSolvex.Application.csproj.AssemblyReference.cache
 D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Application\obj\Debug\net8.0\PruebaSo.F1265F88.Up2Date
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Application\obj\Debug\net8.0\PruebaSolvex.Application.sourcelink.json

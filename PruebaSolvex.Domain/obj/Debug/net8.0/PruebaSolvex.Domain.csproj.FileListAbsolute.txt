@@ -12,3 +12,4 @@ D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Domain\obj\Debug\
 D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Domain\obj\Debug\net8.0\PruebaSolvex.Domain.pdb
 D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Domain\obj\Debug\net8.0\PruebaSolvex.Domain.genruntimeconfig.cache
 D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Domain\obj\Debug\net8.0\ref\PruebaSolvex.Domain.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Domain\obj\Debug\net8.0\PruebaSolvex.Domain.sourcelink.json

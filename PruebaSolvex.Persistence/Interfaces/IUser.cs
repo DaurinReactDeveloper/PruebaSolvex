@@ -12,7 +12,11 @@ namespace PruebaSolvex.Persistence.Interfaces
     public interface IUser : IBaseRepository<User>
     {
 
-        Task<List<UserModel>> GetUser();
+        Task<List<UserModel>> GetUsers();
+
+        Task<UserModel> GetUser(string email, string password);
+
+        Task<UserModel> GetUserEmail(string email);
 
     }
 }

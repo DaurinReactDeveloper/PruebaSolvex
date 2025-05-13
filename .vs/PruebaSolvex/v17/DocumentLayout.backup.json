@@ -1,20 +1,15 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E76E2789-4B1C-4CC5-B1CC-DE2A19B70B74}|PruebaSolvex.Persistence\\PruebaSolvex.Persistence.csproj|d:\\mis proyectos\\pruebatecnicasolvex\\pruebasolvex\\pruebasolvex.persistence\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E76E2789-4B1C-4CC5-B1CC-DE2A19B70B74}|PruebaSolvex.Persistence\\PruebaSolvex.Persistence.csproj|solutionrelative:pruebasolvex.persistence\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 84,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 130,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,19 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Persistence\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "PruebaSolvex.Persistence\\Repositories\\ProductRepository.cs",
-              "ToolTip": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Persistence\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "PruebaSolvex.Persistence\\Repositories\\ProductRepository.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAcwBwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T00:25:52.513Z",
-              "EditorCaption": ""
             }
           ]
         }

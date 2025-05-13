@@ -122,3 +122,16 @@ D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net
 D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\PruebaSolvex.Domain.pdb
 D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\PruebaSolvex.Infrastructure.pdb
 D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\PruebaSolvex.Persistence.pdb
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\CloudinaryDotNet.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\JWT.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Api\obj\Debug\net8.0\PruebaSolvex.Api.sourcelink.json

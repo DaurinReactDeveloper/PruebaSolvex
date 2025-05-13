@@ -17,3 +17,4 @@ D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Persistence\bin\D
 D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Persistence\bin\Debug\net8.0\PruebaSolvex.Infrastructure.pdb
 D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Persistence\bin\Debug\net8.0\PruebaSolvex.Domain.pdb
 D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Persistence\obj\Debug\net8.0\PruebaSo.038220C6.Up2Date
+D:\Mis Proyectos\PruebaTecnicaSolvex\PruebaSolvex\PruebaSolvex.Persistence\obj\Debug\net8.0\PruebaSolvex.Persistence.sourcelink.json

@@ -26,17 +26,16 @@ namespace PruebaSolvex.Persistence.Repositories
             this.logger = logger;
         }
 
-        public async Task<List<ProductVariationModel>> GetProductVariation()
+        public async Task<List<ProductVariationModel>> GetProductVariationByProductId(int productId)
         {
             try
             {
 
                 var productVariation = await (from prv in dbsolvexContext.Productvariations
-                                              where !prv.Deleted
+                                              where !prv.Deleted &&  prv.ProductId == productId
                                               select new ProductVariationModel()
                                               {
 
-                                                  Id = prv.Id,
                                                   ProductId = prv.ProductId,
                                                   Color = prv.Color,
                                                   Price = prv.Price,
@@ -48,8 +47,8 @@ namespace PruebaSolvex.Persistence.Repositories
 
             catch (Exception ex)
             {
-                logger.LogError($"Ha ocurrido un error obteniendo la variacion de productos, {ex.ToString()}.");
-                throw new ProductVariationException("Ha ocurrido un error obteniendo la variacion de productos.");
+                logger.LogError($"Ha ocurrido un error obteniendo la variacion del producto, {ex.ToString()}.");
+                throw new ProductVariationException("Ha ocurrido un error obteniendo la variacion del producto.");
             }
         }
 

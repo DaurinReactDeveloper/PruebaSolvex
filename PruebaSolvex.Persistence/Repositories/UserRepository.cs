@@ -25,7 +25,7 @@ namespace PruebaSolvex.Persistence.Repositories
             this.logger = logger;
         }
 
-        public async Task<List<UserModel>> GetUser()
+        public async Task<List<UserModel>> GetUsers()
         {
             try
             {
@@ -51,6 +51,54 @@ namespace PruebaSolvex.Persistence.Repositories
                 throw new UserException("Ha ocurrido un error obteniendo los usuarios.");
             }
 
+        }
+
+        public async Task<UserModel> GetUserEmail(string email)
+        {
+            try
+            {
+                var usuario = await (from pr in dbsolvexContext.Users
+                                     where !pr.Deleted && pr.Email.Equals(email)
+                                     select new UserModel()
+                                     {
+                                         Email = pr.Email,
+                                         PasswordHash = pr.PasswordHash,
+
+                                     }).FirstOrDefaultAsync();
+
+                return usuario;
+
+            }
+            catch (Exception ex)
+            {
+                logger.LogError($"Ha ocurrido un error obteniendo el usuario, {ex.ToString()}.");
+                throw new UserException("Ha ocurrido un error obteniendo el usuario.");
+            }
+        }
+
+        public async Task<UserModel> GetUser(string email, string password)
+        {
+            try
+            {
+                var usuario = await (from us in dbsolvexContext .Users
+                                     where !us.Deleted && us.Email.Equals(email) && us.PasswordHash.Equals(password)
+                                     select new UserModel()
+                                     {
+                                         Id = us.Id,
+                                         Name = us.Name,
+                                         Email = us.Email,
+                                         Role = us.Role,
+
+                                     }).FirstOrDefaultAsync();
+
+                return usuario;
+
+            }
+            catch (Exception ex)
+            {
+                logger.LogError($"Ha ocurrido un error obteniendo el usuario, {ex.ToString()}.");
+                throw new UserException("Ha ocurrido un error obteniendo el usuario.");
+            }
         }
 
         public override async Task Add(User entity)
@@ -81,6 +129,7 @@ namespace PruebaSolvex.Persistence.Repositories
                 userUpdate.Name = entity.Name;
                 userUpdate.Email = entity.Email;
                 userUpdate.PasswordHash = entity.PasswordHash;
+                userUpdate.Role = entity.Role;
                 userUpdate.ModifyDate = DateTime.Now;
                 userUpdate.UserMod = entity.UserMod;
 

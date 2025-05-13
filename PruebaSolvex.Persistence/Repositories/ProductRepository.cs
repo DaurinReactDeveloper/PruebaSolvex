@@ -79,7 +79,6 @@ namespace PruebaSolvex.Persistence.Repositories
 
                 productUpdate.Name = entity.Name;
                 productUpdate.Description = entity.Description;
-                productUpdate.ImageUrl = entity.ImageUrl;
                 productUpdate.ModifyDate = DateTime.Now;
                 productUpdate.UserMod = entity.UserMod;
 
