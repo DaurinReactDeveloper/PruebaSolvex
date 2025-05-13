@@ -1,9 +1,10 @@
-﻿using System;
+﻿using PruebaSolvex.Domain.Core;
+using System;
 using System.Collections.Generic;
 
 namespace PruebaSolvex.Domain.Entities
 {
-    public partial class Product
+    public partial class Product : SimilarFields
     {
         public int Id { get; set; }
 
@@ -13,7 +14,7 @@ namespace PruebaSolvex.Domain.Entities
 
         public string? ImageUrl { get; set; }
 
-        public virtual ICollection<Productvariation> Productvariations { get; set; } = new List<Productvariation>();
+        public virtual ICollection<ProductVariation> Productvariations { get; set; } = new List<ProductVariation>();
     }
 
 }

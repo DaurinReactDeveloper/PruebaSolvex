@@ -19,7 +19,7 @@ public partial class DbsolvexContext : DbContext
 
     public virtual DbSet<Product> Products { get; set; }
 
-    public virtual DbSet<Productvariation> Productvariations { get; set; }
+    public virtual DbSet<ProductVariation> Productvariations { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
 
@@ -44,7 +44,7 @@ public partial class DbsolvexContext : DbContext
             entity.Property(e => e.Name).HasMaxLength(100);
         });
 
-        modelBuilder.Entity<Productvariation>(entity =>
+        modelBuilder.Entity<ProductVariation>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 

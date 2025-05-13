@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PruebaSolvex.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+100c70c263fb6d29e5bb080d590cce9986647c83")]
 [assembly: System.Reflection.AssemblyProductAttribute("PruebaSolvex.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PruebaSolvex.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,7 +18,7 @@ namespace PruebaSolvex.Infrastructure.Models
 
         public string? ImageUrl { get; set; }
 
-        public virtual ICollection<Productvariation> Productvariations { get; set; } = new List<Productvariation>();
+        public virtual ICollection<ProductVariation> Productvariations { get; set; } = new List<ProductVariation>();
 
     }
 }
