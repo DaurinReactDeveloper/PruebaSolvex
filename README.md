@@ -1,63 +1,112 @@
-<img src='https://i.imgur.com/oV7AZCy.png' alt="Backend"/>
+<img src='https://i.imgur.com/oV7AZCy.png' alt="Backend" style="width:100%; border-radius: 10px;"/>
 
-<h1>🔧 Backend del Sistema de Gestión de Productos</h1> 
+<h1 align="center">🛠️ Backend del Sistema de Gestión de Productos</h1>
 
-<h2>🧠 Descripción del Proyecto (Backend)</h2> 
+<h2>📌 Descripción General</h2>
 
-<p>Desarrollado con <strong>ASP.NET Core</strong> y estructurado bajo principios de arquitectura limpia, este backend gestiona productos, usuarios y roles utilizando autenticación segura con <strong>JWT</strong>. Se conecta a una base de datos <strong>MySQL</strong> y permite la carga de imágenes con <strong>Cloudinary</strong>.</p>
+<p>
+Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguiendo una arquitectura limpia. Se conecta a una base de datos <strong>MySQL</strong> y permite la gestión completa de productos, autenticación de usuarios con <strong>JWT</strong>, encriptación de contraseñas y carga de imágenes en la nube con <strong>Cloudinary</strong>.
+</p>
 
-<p>El sistema permite múltiples variaciones de un producto según su <strong>color</strong>, con precios diferentes por cada uno. Los usuarios pueden autenticarse y ver funcionalidades según su <strong>rol</strong>.</p>
+---
 
-<h2>🧠 Lógica de Solución para Productos con Diferentes Colores y Precios</h2> 
+<h2>🧠 Lógica de Productos con Colores y Precios Diferentes</h2>
 
-<p>Para permitir que un mismo producto tenga múltiples precios por color, se implementó una restricción en la base de datos que garantiza que la <strong>combinación de nombre y color sea única</strong>.</p>
+<p>
+🔄 Para permitir productos con múltiples precios según el color, se implementó una <strong>restricción única</strong> en la base de datos que impide que se repita la combinación <code>nombre + color</code>.
+</p>
 
-<p>De esta manera, podemos tener registros como:</p>
-
+<p>✅ Ejemplo de registros válidos:</p>
 <ul>
-<li>IPhone - Negro - $1200</li>
-<li>IPhone - Azul - $1200</li>
-<li>IPhone - Verde - $1300</li>
+  <li>📱 IPhone - Negro - $1200</li>
+  <li>📱 IPhone - Azul - $1200</li>
+  <li>📱 IPhone - Verde - $1300</li>
 </ul>
 
-<p>Esto se logra mediante una restricción <strong>UNIQUE(nombre, color)</strong> en la tabla de productos o en una tabla de variaciones si se usa una estructura más normalizada.</p>
+<p>🛡️ Esto garantiza integridad y variedad sin duplicar productos incorrectamente.</p>
 
-<h2>🖼️ Subida y Gestión de Imágenes</h2>
+---
 
-<p>Para manejar imágenes de productos, se utilizó <strong>CloudinaryDotNet</strong>. Al registrar o editar un producto, se puede subir una imagen, la cual es enviada a Cloudinary y se guarda la URL en la base de datos.</p>
+<h2>🖼️ Gestión de Imágenes con Cloudinary</h2>
 
-<h3>🧩 Proceso de subida de imagen:</h3>
+<p>
+🧩 Al agregar o editar un producto, el usuario puede subir una imagen. Esta imagen es almacenada en la nube usando <strong>CloudinaryDotNet</strong> y se guarda la URL correspondiente en la base de datos.
+</p>
+
+<h3>🚀 Flujo:</h3>
 <ol>
-<li>El usuario selecciona una imagen desde el frontend.</li>
-<li>La imagen se envía como <code>IFormFile</code> al backend.</li>
-<li>Se usa el SDK de Cloudinary para subirla con una configuración segura.</li>
-<li>Se obtiene la URL y se guarda en la base de datos como parte del producto.</li>
+  <li>🧑‍💻 El usuario selecciona una imagen en el frontend.</li>
+  <li>📤 El backend la recibe como <code>IFormFile</code> y la sube a Cloudinary.</li>
+  <li>🔗 Se obtiene la URL de la imagen y se guarda en el registro del producto.</li>
 </ol>
 
-<p>De esta manera, las imágenes no se almacenan directamente en el servidor ni en la base de datos, solo su URL.</p>
+---
 
-<h2>🛠 Tecnologías Utilizadas</h2> 
-<ul> 
-<li>⚙️ ASP.NET Core (.NET 6+)</li>
-<li>🧱 MySQL con Entity Framework Core</li>
-<li>🔐 JWT (Microsoft.AspNetCore.Authentication.JwtBearer)</li>
-<li>🔒 BCrypt.Net-Next para encriptación de contraseñas</li>
-<li>☁️ CloudinaryDotNet para gestión de imágenes</li>
-<li>📁 Arquitectura en capas</li>
-</ul>
+<h2>🗂️ Esquema de Base de Datos</h2>
 
-<h2>🧰 Servicios Backend</h2> 
+<p>A continuación se muestra el diseño de la base de datos utilizado para garantizar integridad y eficiencia:</p>
+
+<p align="center">
+  <!-- Reemplaza este link con tu imagen real del diagrama de BD -->
+  <img src="https://i.imgur.com/tuImagenEjemplo.png" alt="Esquema BD" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px;" />
+</p>
+
+---
+
+<h2>⚙️ Tecnologías Usadas</h2>
+
 <ul>
-<li><strong>AuthService</strong>: Registro, login, autenticación JWT y asignación de roles.</li>
-<li><strong>ProductService</strong>: Mantenimiento completo de productos, incluyendo variaciones por color y precio únicos.</li>
-<li><strong>UserService</strong>: CRUD de usuarios, visualización de perfiles y asignación de roles.</li>
-<li><strong>ImageService</strong>: Carga y gestión de imágenes con Cloudinary.</li>
+  <li>🌐 <strong>ASP.NET Core (.NET 6)</strong></li>
+  <li>🛢️ <strong>MySQL</strong> con Entity Framework Core</li>
+  <li>🔐 <strong>JWT</strong> (Microsoft.AspNetCore.Authentication.JwtBearer)</li>
+  <li>🔒 <strong>BCrypt.Net-Next</strong> para encriptar contraseñas</li>
+  <li>☁️ <strong>CloudinaryDotNet</strong> para imágenes</li>
+  <li>🏗️ Arquitectura en capas: Controllers, Services, Repositories</li>
 </ul>
 
-<h2>🛡 Seguridad Basada en Roles</h2>
+---
+
+<h2>🧰 Servicios Implementados</h2>
+
 <ul>
-<li><strong>Admin</strong>: Crear, Modificar, Eliminar, Ver</li>
-<li><strong>Seller</strong>: Crear, Modificar, Ver</li>
-<li><strong>User</strong>: Ver</li>
+  <li><strong>🧾 AuthService</strong>: Registro, login, autenticación y generación de tokens JWT.</li>
+  <li><strong>📦 ProductService</strong>: CRUD completo de productos con lógica para colores y precios únicos.</li>
+  <li><strong>👥 UserService</strong>: Gestión de usuarios, roles y validaciones.</li>
+  <li><strong>🖼️ ImageService</strong>: Subida de imágenes a Cloudinary y gestión de rutas.</li>
 </ul>
 
+---
+
+<h2>🔐 Roles y Acceso</h2>
+
+<p>El sistema cuenta con un sistema robusto de autorización por roles:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>👤 Rol</th>
+      <th>📝 Permisos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Administrador</strong></td>
+      <td>Ver, Crear, Editar, Eliminar</td>
+    </tr>
+    <tr>
+      <td><strong>Vendedor</strong></td>
+      <td>Ver, Crear, Editar</td>
+    </tr>
+    <tr>
+      <td><strong>Usuario</strong></td>
+      <td>Ver</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+<h2>📫 Contacto</h2>
+
+<p>👨‍💻 Desarrollado por: <strong>[Tu nombre o equipo]</strong></p>
+<p>📧 Email: <a href="mailto:tuemail@dominio.com">tuemail@dominio.com</a></p>
