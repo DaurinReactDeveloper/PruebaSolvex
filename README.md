@@ -27,21 +27,6 @@ Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguie
 
 ---
 
-<h2>🖼️ Gestión de Imágenes con Cloudinary</h2>
-
-<p>
-🧩 Al agregar o editar un producto, el usuario puede subir una imagen. Esta imagen es almacenada en la nube usando <strong>CloudinaryDotNet</strong> y se guarda la URL correspondiente en la base de datos.
-</p>
-
-<h3>🚀 Flujo:</h3>
-<ol>
-  <li>🧑‍💻 El usuario selecciona una imagen en el frontend.</li>
-  <li>📤 El backend la recibe como <code>IFormFile</code> y la sube a Cloudinary.</li>
-  <li>🔗 Se obtiene la URL de la imagen y se guarda en el registro del producto.</li>
-</ol>
-
----
-
 <h2>🗂️ Esquema de Base de Datos</h2>
 
 <p>A continuación se muestra el diseño de la base de datos utilizado para garantizar integridad y eficiencia:</p>
@@ -56,12 +41,12 @@ Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguie
 <h2>⚙️ Tecnologías Usadas</h2>
 
 <ul>
-  <li>🌐 <strong>ASP.NET Core (.NET 6)</strong></li>
+  <li>🌐 <strong>ASP.NET Core (.NET 8)</strong></li>
   <li>🛢️ <strong>MySQL</strong> con Entity Framework Core</li>
   <li>🔐 <strong>JWT</strong> (Microsoft.AspNetCore.Authentication.JwtBearer)</li>
   <li>🔒 <strong>BCrypt.Net-Next</strong> para encriptar contraseñas</li>
   <li>☁️ <strong>CloudinaryDotNet</strong> para imágenes</li>
-  <li>🏗️ Arquitectura en capas: Controllers, Services, Repositories</li>
+  <li>🏗️ Arquitectura Limpia</li>
 </ul>
 
 ---
@@ -108,5 +93,5 @@ Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguie
 
 <h2>📫 Contacto</h2>
 
-<p>👨‍💻 Desarrollado por: <strong>[Tu nombre o equipo]</strong></p>
-<p>📧 Email: <a href="mailto:tuemail@dominio.com">tuemail@dominio.com</a></p>
+<p>👨‍💻 Desarrollado por: <strong>Daurin Gonzalez</strong></p>
+<p>📧 Email: dauringonzales7@gmail.com</p>
