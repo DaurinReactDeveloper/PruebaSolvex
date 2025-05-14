@@ -2,6 +2,7 @@
 using PruebaSolvex.Application.Contract;
 using PruebaSolvex.Application.Core;
 using PruebaSolvex.Application.Dtos.ProductDto;
+using PruebaSolvex.Application.Mappers;
 using PruebaSolvex.Application.Validations;
 using PruebaSolvex.Domain.Entities;
 using PruebaSolvex.Persistence.Interfaces;
@@ -23,8 +24,44 @@ namespace PruebaSolvex.Application.Servicies
         public ProductServices(IProduct _product, ILogger<ProductServices> _logger, ICloudinaryServices _cloudinaryServices)
         {
             this._product = _product;
-            this._logger  = _logger;
+            this._logger = _logger;
             this._cloudinaryServices = _cloudinaryServices;
+        }
+
+        public async Task<ServiceResult> SearchProductsByName(string name)
+        {
+            ServiceResult result = new ServiceResult();
+
+            try
+            {
+
+                if (!ProductValidations.ProductSearchValidation(name, out string message))
+                {
+                    result.Success = false;
+                    result.Message = message;
+                    return result;
+                }
+
+                var products = await _product.SearchProductsByName(name);
+
+                if (!ProductValidations.ProductCount(products, out string messageValid))
+                {
+                    result.Success = false;
+                    result.Message = messageValid;
+                    return result;
+                }
+
+                result.Data = products;
+                result.Message = "Productos encontrados correctamente";
+            }
+            catch (Exception ex)
+            {
+                result.Success = false;
+                result.Message = "Ha ocurrido un error buscando los productos.";
+                _logger.LogError($"Error buscando productos por nombre: {ex.Message}");
+            }
+
+            return result;
         }
 
         public async Task<ServiceResult> GetProducts()
@@ -56,13 +93,33 @@ namespace PruebaSolvex.Application.Servicies
             return result;
         }
 
-
         public async Task<ServiceResult> Add(ProductAddDto modelDto)
         {
             ServiceResult result = new ServiceResult();
 
             try
             {
+
+                var exists = await _product.ProductExist(modelDto.Name, modelDto.Color);
+
+                if (!ProductValidations.ProductExists(exists, out string messageVerifyProduct))
+                {
+                    result.Success = false;
+                    result.Message = messageVerifyProduct;
+                    return result;
+                }
+
+                var existsDelete = await _product.IsDeletedProductExists(modelDto.Name, modelDto.Color);
+
+                if (!ProductValidations.ProductExistsDelete(existsDelete, out string messageVerifyProductDelete))
+                {
+
+                    var productExistsDeleteUpdate = ProductMapper.MapToProduct(existsDelete, modelDto.ChangeUser);
+
+                    await _product.UpdateDeleteProduct(productExistsDeleteUpdate);
+                    result.Message = messageVerifyProductDelete;
+                    return result;
+                }
 
                 if (!ProductValidations.ProductAddValidation(modelDto, out string message))
                 {
@@ -86,14 +143,16 @@ namespace PruebaSolvex.Application.Servicies
                 await _product.Add(new Product
                 {
 
-                    Name = modelDto.Name, 
-                    Description = modelDto.Description, 
+                    Name = modelDto.Name,
+                    Description = modelDto.Description,
                     ImageUrl = imageUrl,
+                    Color = modelDto.Color,
+                    Price = modelDto.Price,
                     CreationDate = DateTime.Now,
+                    CreationUser = modelDto.ChangeUser,
 
                 });
 
-                await _product.SaveChanges();
                 result.Message = "Producto agregado correctamente";
 
             }
@@ -131,11 +190,12 @@ namespace PruebaSolvex.Application.Servicies
 
                 productUpdate.Name = modelDto.Name;
                 productUpdate.Description = modelDto.Description;
+                productUpdate.Price = modelDto.Price;
+                productUpdate.Color = modelDto.Color;
                 productUpdate.UserMod = modelDto.ChangeUser;
                 productUpdate.ModifyDate = DateTime.Now;
 
                 await _product.Update(productUpdate);
-                await _product.SaveChanges();
                 result.Message = "Producto actualizado correctamente";
             }
             catch (Exception ex)
@@ -174,7 +234,6 @@ namespace PruebaSolvex.Application.Servicies
                 productRemove.UserDeleted = modelDto.ChangeUser;
 
                 await _product.Remove(productRemove);
-                await _product.SaveChanges();
                 result.Message = "Producto eliminado correctamente";
             }
             catch (Exception ex)
@@ -186,8 +245,6 @@ namespace PruebaSolvex.Application.Servicies
 
             return result;
         }
-
-
 
     }
 }

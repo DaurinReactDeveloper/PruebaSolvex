@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Domain\\PruebaSolvex.Domain.csproj": {}
+    "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvexBackend\\PruebaSolvex.Domain\\PruebaSolvex.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Domain\\PruebaSolvex.Domain.csproj": {
+    "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvexBackend\\PruebaSolvex.Domain\\PruebaSolvex.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Domain\\PruebaSolvex.Domain.csproj",
+        "projectUniqueName": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvexBackend\\PruebaSolvex.Domain\\PruebaSolvex.Domain.csproj",
         "projectName": "PruebaSolvex.Domain",
-        "projectPath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Domain\\PruebaSolvex.Domain.csproj",
+        "projectPath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvexBackend\\PruebaSolvex.Domain\\PruebaSolvex.Domain.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Domain\\obj\\",
+        "outputPath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvexBackend\\PruebaSolvex.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -4227,11 +4227,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Application\\PruebaSolvex.Application.csproj",
+      "projectUniqueName": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvexBackend\\PruebaSolvex.Application\\PruebaSolvex.Application.csproj",
       "projectName": "PruebaSolvex.Application",
-      "projectPath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Application\\PruebaSolvex.Application.csproj",
+      "projectPath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvexBackend\\PruebaSolvex.Application\\PruebaSolvex.Application.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Application\\obj\\",
+      "outputPath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvexBackend\\PruebaSolvex.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4252,8 +4252,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Persistence\\PruebaSolvex.Persistence.csproj": {
-              "projectPath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Persistence\\PruebaSolvex.Persistence.csproj"
+            "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvexBackend\\PruebaSolvex.Persistence\\PruebaSolvex.Persistence.csproj": {
+              "projectPath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvexBackend\\PruebaSolvex.Persistence\\PruebaSolvex.Persistence.csproj"
             }
           }
         }

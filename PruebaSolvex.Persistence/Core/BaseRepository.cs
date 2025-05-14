@@ -42,6 +42,12 @@ namespace PruebaSolvex.Persistence.Core
             await Task.CompletedTask;
         }
 
+        public virtual async Task UpdateDeleteProduct(Entity entity)
+        {
+            this.dbset.Update(entity);
+            await Task.CompletedTask;
+        }
+
         public virtual async Task Remove(Entity entity)
         {
             this.dbset.Remove(entity);

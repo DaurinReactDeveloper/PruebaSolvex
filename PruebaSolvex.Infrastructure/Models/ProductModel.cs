@@ -18,7 +18,10 @@ namespace PruebaSolvex.Infrastructure.Models
 
         public string? ImageUrl { get; set; }
 
-        public virtual ICollection<ProductVariation> Productvariations { get; set; } = new List<ProductVariation>();
+        public string Color { get; set; } = null!;
+
+        public decimal Price { get; set; }
+
 
     }
 }

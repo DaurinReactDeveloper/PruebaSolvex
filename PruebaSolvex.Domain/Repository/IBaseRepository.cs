@@ -13,6 +13,7 @@ namespace PruebaSolvex.Domain.Repository
         Task<Entity> GetById(int id);
         Task Add(Entity entity);
         Task Update(Entity entity);
+        Task UpdateDeleteProduct(Entity entity);
         Task Remove(Entity entity);
         Task SaveChanges();
 

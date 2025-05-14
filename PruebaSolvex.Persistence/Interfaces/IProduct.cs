@@ -14,5 +14,12 @@ namespace PruebaSolvex.Persistence.Interfaces
 
         Task<List<ProductModel>> GetProducts();
 
+        Task<List<ProductModel>> SearchProductsByName(string name);
+
+        Task<bool> ProductExist(string name, string color);
+
+        Task<ProductModel> IsDeletedProductExists(string name, string color);
+
+
     }
 }

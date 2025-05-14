@@ -17,5 +17,6 @@ namespace PruebaSolvex.Domain.Entities
 
         public string Role { get; set; } = null!;
 
+
     }
 }

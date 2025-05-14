@@ -119,5 +119,46 @@ namespace PruebaSolvex.Application.Validations
 
         }
 
+        public static bool ProductSearchValidation(string name, out string message)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                message = "El nombre de búsqueda no puede estar vacío.";
+                return false;
+            }
+
+            message = string.Empty;
+            return true;
+        }
+
+        public static bool ProductExists(bool product,out string message)
+        {
+            message = string.Empty;
+
+            if (product == true)
+            {
+                message = "El producto con este nombre y precio ya existe.";
+                return false;
+            }
+
+            return true;
+
+        }
+
+        public static bool ProductExistsDelete(ProductModel product, out string message)
+        {
+            message = string.Empty;
+
+            if (product != null)
+            {
+                message = "Producto Reactivado.";
+                return false;
+            }
+
+            return true;
+
+        }
+
+
     }
 }

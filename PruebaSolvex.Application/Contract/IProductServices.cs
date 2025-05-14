@@ -14,5 +14,7 @@ namespace PruebaSolvex.Application.Contract
 
         Task<ServiceResult> GetProducts();
 
+        Task<ServiceResult> SearchProductsByName(string name);
+
     }
 }

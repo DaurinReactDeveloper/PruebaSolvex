@@ -58,7 +58,7 @@ namespace PruebaSolvex.Persistence.Repositories
             try
             {
                 var usuario = await (from pr in dbsolvexContext.Users
-                                     where !pr.Deleted && pr.Email.Equals(email)
+                                     where pr.Email.Equals(email)
                                      select new UserModel()
                                      {
                                          Email = pr.Email,

@@ -18,8 +18,4 @@
     <ProjectReference Include="..\PruebaSolvex.loc\PruebaSolvex.loc.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

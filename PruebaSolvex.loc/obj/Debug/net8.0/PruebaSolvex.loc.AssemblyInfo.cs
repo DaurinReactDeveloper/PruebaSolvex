@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PruebaSolvex.loc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6148f5235d985688523f21c7f250aadf9978ddf7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95c5a11430c83787f9f8d4b209783295279dd45c")]
 [assembly: System.Reflection.AssemblyProductAttribute("PruebaSolvex.loc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PruebaSolvex.loc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

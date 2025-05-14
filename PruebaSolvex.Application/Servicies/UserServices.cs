@@ -128,6 +128,7 @@ namespace PruebaSolvex.Application.Servicies
                     PasswordHash = passwordHash,
                     Role = "user",
                     CreationDate = DateTime.Now,
+                    CreationUser = modelDto.ChangeUser
 
                 });
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cgh4tFQKXZg=",
+  "dgSpecHash": "rDZiuDRFRAI=",
   "success": true,
-  "projectFilePath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvex\\PruebaSolvex.Application\\PruebaSolvex.Application.csproj",
+  "projectFilePath": "D:\\Mis Proyectos\\PruebaTecnicaSolvex\\PruebaSolvexBackend\\PruebaSolvex.Application\\PruebaSolvex.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\cloudinarydotnet\\1.27.5\\cloudinarydotnet.1.27.5.nupkg.sha512",
