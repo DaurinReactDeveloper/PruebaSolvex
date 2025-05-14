@@ -54,10 +54,11 @@ Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguie
 <h2>🧰 Servicios Implementados</h2>
 
 <ul>
-  <li><strong>🧾 AuthService</strong>: Registro, login, autenticación y generación de tokens JWT.</li>
+  <li><strong>🧾 CloudinaryService</strong>: Subida y gestión de imágenes en Cloudinary, incluyendo carga y eliminación de imágenes.</li>
+  <li><strong>🔐 JwtService</strong>: Generación y validación de tokens JWT para autenticación de usuarios.</li>
+  <li><strong>🔒 PasswordHelperService</strong>: Encriptación y verificación de contraseñas usando BCrypt.</li>
   <li><strong>📦 ProductService</strong>: CRUD completo de productos con lógica para colores y precios únicos.</li>
-  <li><strong>👥 UserService</strong>: Gestión de usuarios, roles y validaciones.</li>
-  <li><strong>🖼️ ImageService</strong>: Subida de imágenes a Cloudinary y gestión de rutas.</li>
+  <li><strong>👥 UserService</strong>: Gestión de usuarios, roles, validación de credenciales y asignación de roles.</li>
 </ul>
 
 ---
