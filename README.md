@@ -1,5 +1,3 @@
-<img src='https://i.imgur.com/oV7AZCy.png' alt="Backend" style="width:100%; border-radius: 10px;"/>
-
 <h1 align="center">🛠️ Backend del Sistema de Gestión de Productos</h1>
 
 <h2>📌 Descripción General</h2>
@@ -32,8 +30,7 @@ Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguie
 <p>A continuación se muestra el diseño de la base de datos utilizado para garantizar integridad y eficiencia:</p>
 
 <p align="center">
-  <!-- Reemplaza este link con tu imagen real del diagrama de BD -->
-  <img src="https://i.imgur.com/tuImagenEjemplo.png" alt="Esquema BD" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px;" />
+  <img src="https://res.cloudinary.com/dret6llu8/image/upload/v1747261594/l1ckwdh7iskdl0s4pltg.png" alt="Esquema BD" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px;" />
 </p>
 
 ---
