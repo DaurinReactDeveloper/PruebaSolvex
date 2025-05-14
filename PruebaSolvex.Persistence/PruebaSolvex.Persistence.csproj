@@ -8,9 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Context\" />
-    <Folder Include="Core\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
