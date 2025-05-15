@@ -126,7 +126,7 @@ namespace PruebaSolvex.Application.Servicies
                     Name = modelDto.Name,
                     Email = modelDto.Email,
                     PasswordHash = passwordHash,
-                    Role = "user",
+                    Role = modelDto.Role,
                     CreationDate = DateTime.Now,
                     CreationUser = modelDto.ChangeUser
 

@@ -6,7 +6,7 @@
 Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguiendo una arquitectura limpia. Se conecta a una base de datos <strong>MySQL</strong> y permite la gestión completa de productos, autenticación de usuarios con <strong>JWT</strong>, encriptación de contraseñas y carga de imágenes en la nube con <strong>Cloudinary</strong>.
 </p>
 
-⚠️ Nota:</strong> El archivo <code>appsettings.json</code> fue subido a GitHub <strong>únicamente con fines de validación del proyecto</strong>. Somos conscientes de que esto constituye una mala práctica en entornos reales de desarrollo, donde este tipo de archivo debe ser excluido del control de versiones por contener información sensible como cadenas de conexión y claves API.</p>
+⚠️ Nota:</strong> El archivo <code>appsettings.json</code> fue subido a GitHub <strong>únicamente con fines de validación del proyecto</strong>. Somos conscientes de que esto constituye una mala práctica en entornos reales de desarrollo, donde este tipo de archivo debe ser excluido del control de versiones por contener información sensible como cadenas de conexión y claves API. Ademas no integre pruebas unitarias por tema de tiempo.</p>
 
 ---
 
