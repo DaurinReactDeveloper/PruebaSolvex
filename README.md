@@ -6,9 +6,15 @@
 Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguiendo una arquitectura limpia. Se conecta a una base de datos <strong>MySQL</strong> y permite la gestión completa de productos, autenticación de usuarios con <strong>JWT</strong>, encriptación de contraseñas y carga de imágenes en la nube con <strong>Cloudinary</strong>.
 </p>
 
-⚠️ Nota:</strong> El archivo <code>appsettings.json</code> fue subido a GitHub <strong>únicamente con fines de validación del proyecto</strong>. Somos conscientes de que esto constituye una mala práctica en entornos reales de desarrollo, donde este tipo de archivo debe ser excluido del control de versiones por contener información sensible como cadenas de conexión y claves API. Ademas no integre pruebas unitarias por tema de tiempo.</p>
+<p>
+Además, se implementó el <strong>patrón repositorio</strong> para abstraer el acceso a datos y facilitar el mantenimiento del código, así como la <strong>inyección de dependencias</strong> para mejorar la escalabilidad y testabilidad del sistema.
+</p>
 
----
+<p>
+⚠️ <strong>Nota:</strong> El archivo <code>appsettings.json</code> fue subido a GitHub <strong>únicamente con fines de validación del proyecto</strong>. Somos conscientes de que esto constituye una mala práctica en entornos reales de desarrollo, donde este tipo de archivo debe ser excluido del control de versiones por contener información sensible como cadenas de conexión y claves API. Además, no se integraron pruebas unitarias por temas de tiempo.
+</p>
+
+<hr />
 
 <h2>🧠 Lógica de Productos con Colores y Precios Diferentes</h2>
 
@@ -25,7 +31,7 @@ Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguie
 
 <p>🛡️ Esto garantiza integridad y variedad sin duplicar productos incorrectamente.</p>
 
----
+<hr />
 
 <h2>🗂️ Esquema de Base de Datos</h2>
 
@@ -35,7 +41,7 @@ Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguie
   <img src="https://res.cloudinary.com/dret6llu8/image/upload/v1747261594/l1ckwdh7iskdl0s4pltg.png" alt="Esquema BD" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px;" />
 </p>
 
----
+<hr />
 
 <h2>⚙️ Tecnologías Usadas</h2>
 
@@ -45,10 +51,12 @@ Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguie
   <li>🔐 <strong>JWT</strong> (Microsoft.AspNetCore.Authentication.JwtBearer)</li>
   <li>🔒 <strong>BCrypt.Net-Next</strong> para encriptar contraseñas</li>
   <li>☁️ <strong>CloudinaryDotNet</strong> para imágenes</li>
-  <li>🏗️ Arquitectura Limpia</li>
+  <li>🏗️ <strong>Arquitectura Limpia</strong></li>
+  <li>📁 <strong>Patrón Repositorio</strong></li>
+  <li>🧩 <strong>Inyección de Dependencias</strong></li>
 </ul>
 
----
+<hr />
 
 <h2>🧰 Servicios Implementados</h2>
 
@@ -60,7 +68,7 @@ Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguie
   <li><strong>👥 UserService</strong>: Gestión de usuarios, roles, validación de credenciales y asignación de roles.</li>
 </ul>
 
----
+<hr />
 
 <h2>🔐 Roles y Acceso</h2>
 
@@ -89,7 +97,7 @@ Este proyecto fue desarrollado con <strong>ASP.NET Core (.NET 8)</strong> siguie
   </tbody>
 </table>
 
----
+<hr />
 
 <h2>📫 Contacto</h2>
 
